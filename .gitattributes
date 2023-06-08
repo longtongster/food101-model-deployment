@@ -1,0 +1,1 @@
+effnetb2_fine-tuning_adam_lr_0.0001_40.0%_data_10_epochs.pth filter=lfs diff=lfs merge=lfs -text
