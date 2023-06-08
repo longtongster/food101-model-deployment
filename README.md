@@ -15,6 +15,9 @@ https://docs.github.com/en/repositories/working-with-files/managing-large-files/
 When starting an ubuntu EC2 image one first has to perform some housekeeping:
 
 `sudo apt update -y`
+
+followed by:
+
 `supo apt upgrade -y`
 
 after this your machine should be up to date. 
