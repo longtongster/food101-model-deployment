@@ -7,3 +7,15 @@ In order to track large files it advised to install git lfs. The link below show
 These steps have been followed to add the PyTorch model artifact. 
 
 https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage
+
+## install dependencies
+
+### method 1 - using a requirements.txt
+
+The necessary packages can be installed by running
+
+`pip install -r requirements.txt`
+
+### method 2 - using a bootstrap script on AWS EC2
+
+TODO
