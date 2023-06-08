@@ -33,7 +33,7 @@ def predict(img, model, transform, class_names, device):
 
 if __name__ == "__main__":
     # get the device
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = "cpu"
     
     # read the class names
     with open("./class_names.txt") as f:
@@ -71,5 +71,5 @@ if __name__ == "__main__":
     demo.launch(debug=False, # print errors locally
                 share=False, # generate a publically sharable URL
                 server_name="0.0.0.0",
-                server_port=8080# set the port you want gradio to run on
+                server_port=8080 # set the port you want gradio to run on
                )
