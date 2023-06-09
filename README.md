@@ -30,8 +30,6 @@ The last thing to install is git for large files (not sure if this is needed)
 
 `sudo apt install git-lfs`
 
-now clone this repo on your VM.
-
 Now we can install the necessary packages. First install install PyTorch for the cpu:
 
 `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu`
@@ -40,7 +38,7 @@ Then install gradio
 
 `pip3 install gradio`
 
-
+now clone this repository on your local machine or VM.
 
 ### method 2 - using a bootstrap script on AWS EC2
 
