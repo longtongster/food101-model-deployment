@@ -38,7 +38,9 @@ Then install gradio
 
 `pip3 install gradio`
 
-now clone this repository on your local machine or VM.
+now clone this repository on your local machine or VM:
+
+`git clone https://github.com/longtongster/food101-model-deployment.git`
 
 When you use a cloud provider (e.g. AWS EC2) make sure that port 8080 is open to the world (or your IP). 
 
@@ -50,4 +52,16 @@ Now the app should be up and running at `<EC2 public IP>:8080`
 
 ### method 2 - using a bootstrap script on AWS EC2
 
-TODO
+Using a bootstrap script we can automate all the above manual steps.
+
+```
+#!/bin/bash
+sudo apt update -y
+supo apt upgrade -y
+sudo apt install python3-pip -y
+sudo apt install git-lfs
+pip3 install gradio
+https://github.com/longtongster/food101-model-deployment.git
+cd food101-model-deployment
+python3 app.py
+```
