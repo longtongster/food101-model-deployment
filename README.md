@@ -67,4 +67,6 @@ cd food101-model-deployment
 python3 app.py
 ```
 
-Testing it until the git cloning
+The logs of the userdata installation can be checked in the following files:
+/var/log/cloud-init.log
+/var/log/cloud-init-output.log
