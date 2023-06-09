@@ -40,6 +40,14 @@ Then install gradio
 
 now clone this repository on your local machine or VM.
 
+When you use a cloud provider (e.g. AWS EC2) make sure that port 8080 is open to the world (or your IP). 
+
+Then cd into the repo and and enter:
+
+`python3 app.py`
+
+Now the app should be up and running at `<EC2 public IP>:8080`
+
 ### method 2 - using a bootstrap script on AWS EC2
 
 TODO
