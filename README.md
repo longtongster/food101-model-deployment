@@ -62,11 +62,12 @@ sudo apt install python3-pip -y
 sudo apt install git-lfs -y
 pip3 install gradio
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-https://github.com/longtongster/food101-model-deployment.git
+git clone https://github.com/longtongster/food101-model-deployment.git
 cd food101-model-deployment
 python3 app.py
 ```
 
 The logs of the userdata installation can be checked in the following files:
-/var/log/cloud-init.log
-/var/log/cloud-init-output.log
+`/var/log/cloud-init.log`
+and
+`/var/log/cloud-init-output.log`
