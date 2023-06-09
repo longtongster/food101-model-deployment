@@ -71,3 +71,7 @@ The logs of the userdata installation can be checked in the following files:
 `/var/log/cloud-init.log`
 and
 `/var/log/cloud-init-output.log`
+
+The gradio app is running on port 8080. Please make sure that it is open. Open a webbrowser and type
+
+`<EC2 public IP>:8080`
