@@ -88,7 +88,8 @@ sudo apt install python3-pip -y
 sudo apt install git-lfs -y
 pip3 install gradio
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-git clone https://github.com/longtongster/food101-model-deployment.git
+sudo apt install git-lfs
+sudo apt-get install docker-compose -y
 ```
 
 Use the dockerfile that is in the repo and copy it one lever higher (outside the git repo)
