@@ -75,3 +75,20 @@ and
 The gradio app is running on port 8080. Please make sure that it is open. Open a webbrowser and type
 
 `<EC2 public IP>:8080`
+
+### method 3 - containerize the app
+
+First start an AWS EC2 instance with a slightly shorter bootstrap script
+
+```
+#!/bin/bash
+sudo apt update -y
+supo apt upgrade -y
+sudo apt install python3-pip -y
+sudo apt install git-lfs -y
+pip3 install gradio
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+git clone https://github.com/longtongster/food101-model-deployment.git
+```
+
+Use the dockerfile that is in the repo and copy it one lever higher (outside the git repo)
