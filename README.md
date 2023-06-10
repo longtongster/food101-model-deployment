@@ -86,10 +86,10 @@ sudo apt update -y
 supo apt upgrade -y
 sudo apt install python3-pip -y
 sudo apt install git-lfs -y
+sudo apt install git-lfs -y
+sudo apt-get install docker-compose -y
 pip3 install gradio
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-sudo apt install git-lfs
-sudo apt-get install docker-compose -y
 ```
 
 Use the dockerfile that is in the repo and copy it one lever higher (outside the git repo)
