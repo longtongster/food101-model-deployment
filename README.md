@@ -91,5 +91,36 @@ sudo apt-get install docker-compose -y
 pip3 install gradio
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
+Once the image is up and running docker and git will be available. Clone the repo
 
-Use the dockerfile that is in the repo and copy it one lever higher (outside the git repo)
+`git clone https://github.com/longtongster/food101-model-deployment.git`
+
+create a dockerfile
+
+`vim Dockerfile`
+
+and insert the following in the file
+
+```
+FROM python
+WORKDIR /usr/src/app
+RUN pip install gradio
+RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+COPY ./food101-model-deployment ./
+CMD [ "python", "./app.py" ]
+```
+
+build the image 
+
+`sudo docker image build -t model-app .`
+
+start a container from this image
+
+`sudo docker container run -d -p 80:8080 model-app`
+
+Port 80 of the host is mapped to 8080 on the container. Open a webbrowser and enter the ip ardress of the instance
+
+`<EC2 public IP>`
+
+
+
