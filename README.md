@@ -88,8 +88,6 @@ sudo apt install python3-pip -y
 sudo apt install git-lfs -y
 sudo apt install git-lfs -y
 sudo apt-get install docker-compose -y
-pip3 install gradio
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 Once the image is up and running docker and git will be available. Clone the repo
 
