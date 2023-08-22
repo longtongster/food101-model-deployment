@@ -88,6 +88,7 @@ sudo apt install python3-pip -y
 sudo apt install git-lfs -y
 sudo apt install git-lfs -y
 sudo apt-get install docker-compose -y
+sudo usermod -aG docker ubuntu
 ```
 Once the image is up and running docker and git will be available. Clone the repo
 
